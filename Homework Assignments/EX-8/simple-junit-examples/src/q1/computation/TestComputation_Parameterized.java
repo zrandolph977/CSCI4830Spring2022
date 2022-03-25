@@ -1,3 +1,4 @@
+package q1.computation;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -16,9 +17,9 @@ public class TestComputation_Parameterized {
    @Parameters
    public static Collection<Object[]> data() {
       return Arrays.asList(new Object[][] { 
-    	  {0,0,0},
-    	  {1,1,2},
-    	  {2,2,4}
+    	  {100,1,20},
+    	  {101,2,30},
+    	  {102,3,40}
         });
    }
 

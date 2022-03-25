@@ -1,13 +1,9 @@
-package q2;
+package p1.computation;
 
 public class Computation {
 
-	public Computation() {
-		try {
-         UtilProp.loadProperty();
-      } catch (Exception e) {
-         e.printStackTrace();
-      }
+	public Computation() throws Exception {
+		UtilProp.loadProperty();
 	}
 	
 	public int getDiscount(int id, int rate) {

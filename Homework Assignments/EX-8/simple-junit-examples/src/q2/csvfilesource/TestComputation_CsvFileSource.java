@@ -1,4 +1,4 @@
-package q2;
+package q2.csvfilesource;
 
 import org.junit.Assert;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -8,12 +8,12 @@ public class TestComputation_CsvFileSource {
 
    // TODO: Write your answer to complete this test case
    @ParameterizedTest
-   @CsvFileSource(resources = "")
-   public void testGetDiscount() throws Exception {
+   @CsvFileSource(resources = "computation_dataset.csv")
+   public void testGetDiscount(int input1, int input2, int expected) throws Exception {
 
 	  Computation com = new Computation();
-      int result = 0; 
-      Assert.assertEquals(result, null);
+      int result = com.getDiscount(input1, input2); 
+      Assert.assertEquals(expected, result);
 
    }
 }

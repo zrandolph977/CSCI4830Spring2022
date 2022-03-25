@@ -1,3 +1,4 @@
+package q2.csvfilesource;
 
 import java.util.Properties;
 
@@ -33,4 +34,3 @@ public class UtilProp {
 		return prop.getProperty(key).trim();
 	}
 }
-
