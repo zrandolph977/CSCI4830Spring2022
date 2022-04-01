@@ -31,7 +31,7 @@ public class InsertRandolph extends HttpServlet {
          connection = DBConnectionRandolph.connection;
          PreparedStatement preparedStmt = connection.prepareStatement(insertSql);
          preparedStmt.setString(1, task);
-         if(!priority.equals("High") || !priority.equals("Low")) {
+         if(!priority.equals("High") && !priority.equals("Low")) {
         	 priority = "Low";
          }
          preparedStmt.setString(2, priority);
