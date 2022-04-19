@@ -19,3 +19,5 @@ server.xml
 tomcat-users.xml
 web.xml
 config.properties
+.DS_Store
+Homework Assignments/.DS_Store
